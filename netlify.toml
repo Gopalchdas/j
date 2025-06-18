@@ -1,0 +1,12 @@
+# Netlify configuration for Junkify static site
+[build]
+  # No build command; deploy as-is
+  command = ""
+  publish = "."
+
+# Optional headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Resource-Policy = "same-origin"
+    X-Frame-Options = "SAMEORIGIN"
